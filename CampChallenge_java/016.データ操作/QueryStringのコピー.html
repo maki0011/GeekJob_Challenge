@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>クエリストリング</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="QueryString.jsp" method="get">
+            <P>商品を選んでください</p>
+            <input type="radio" name="type1" value="魚">魚<br>
+            <input type=radio name="type1" value="野菜">野菜<br>
+            <input type=radio name="type1" value="花瓶">花瓶<br>
+           <!--nameを同じにすればradioの選択が同じに-->
+            <input type="number" min="0" max="999999" name="number" placeholder="いくつ？" required=""><br>
+            <p>金額を選んでください</p>
+            <input type="radio" name="price" value="28000">28000円<br>
+            <input type="radio" name="price" value="3500">3500円<br>
+            <input type="radio" name="price" value="1500">1500円<br>
+
+
+            <input type="submit" value="送信" >
+        </form>
+    </body>
+</html>
